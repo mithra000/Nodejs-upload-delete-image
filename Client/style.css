@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* General Styling */
+.bg-container {
+  background-image: url("./Images/bodybackground2.jpg");
+  background-size: cover;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.suggestion {
+  color: #444; /* Darker grayish-blue for suggestions */
+}
+
+/* Form Container */
+.form-container {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  width: 80%;
+  max-width: 600px; /* Responsive max width */
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px;
+}
+
+.document-heading {
+  margin: 1.2rem;
+  color: #333; /* Slightly darker gray for document headings */
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Spacing between elements */
+  width: 100%;
+}
+
+.file-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.file-input-field {
+  border: 1px solid #ccc;
+  padding: 0.4rem;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.file-input-field:hover {
+  background-color: #f5f5f5; /* Lighter background on hover */
+}
+
+.upload-btn {
+  height: 40px;
+  width: 120px;
+  border: none;
+  background-color: #ff8c00;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.upload-btn:hover {
+  background-color: #ff6f00; /* Darker orange on hover */
+  transform: scale(1.05); /* Slightly scale on hover */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+}
+
+/* Checkbox Override Styling */
+.override-checkbox {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.override-checkbox input[type="checkbox"] {
+  margin-right: 8px; /* Spacing between checkbox and text */
+}
+
+/* Files Container Styling */
+.files-container {
+  background-color: #d2e6f7; /* Light blue background */
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem; /* Spacing between items */
+  border-radius: 10px;
+}
+
+.list-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* Spacing between elements */
+}
+
+.images {
+  max-width: 400px; /* Limit the maximum width */
+  max-height: 400px; /* Limit the maximum height */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.delete-btn {
+  height: 32px;
+  width: 70px;
+  border: none;
+  background-color: #f51919;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.delete-btn:hover {
+  background-color: #c51313; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly scale on hover */
+}
+
+.no-files-container {
+  text-align: center;
+  color: #666; /* Gray text color */
+}
+
+span {
+  font-weight: 800;
+  color: #333;
+  margin: 10px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontendassignment</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-container" id="mainBody">
+      <div class="form-container">
+        <p class="suggetion">
+          Please upload documents only in 'jpg', 'jpeg', 'png' format
+        </p>
+        <h1 class="document-heading">My Documents</h1>
+        <form class="form" id="formSubmission" method="post">
+          <label class="file-label" for="file">Please select a document</label>
+          <input
+            type="file"
+            class="file-input-field"
+            id="file"
+            name="file"
+            accept="image/*"
+          />
+          <label for="checkBox">Override : </label
+          ><input type="checkbox" name="replace" id="checkBox" />
+          <button class="upload-btn" type="submit">Upload</button>
+        </form>
+      </div>
+      <div class="files-container" id="filesContainer"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
